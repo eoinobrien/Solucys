@@ -1,0 +1,65 @@
+.hero {
+  $hero-background-top: rgba(27, 27, 27, 0.7);
+  $hero-background-bottom: rgba(27, 27, 27, 0.7);
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '../img/laptop_whiteboard_copy.jpg';
+
+  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image) no-repeat center center fixed);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 4em;
+  height: 100vh;
+
+  .hero-logo {
+    svg{
+      // height: 5em;
+      margin-bottom: 2.5em;
+      background: #fff;
+      border-radius: 10px;
+    }
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    padding: 3em;
+    margin: auto;
+    text-align: center;
+    color: $hero-color;
+
+    button {
+      @include button(simple, $base-background-color);
+      font-size: $base-font-size;
+      outline: none;
+    }
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        font-size: 1.6em;
+        margin-bottom: .5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        font-family: $serif;
+        margin: auto;
+        margin-bottom: 3em;
+        font-weight: 200;
+        line-height: 1.4em;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 60%;
+        }
+      }
+    }
+  }
+}

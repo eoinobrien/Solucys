@@ -11,15 +11,14 @@
   background-position: center;
   background-size: cover;
   padding-bottom: 4em;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 
-  .hero-logo {
-    svg{
-      // height: 5em;
+  .hero-logo svg{
+      height: 10em;
       margin-bottom: 2.5em;
       background: #fff;
-      border-radius: 10px;
-    }
+      border-radius: 15px;
   }
 
   .hero-inner {

@@ -604,10 +604,25 @@ html {
   padding-bottom: 4em;
   min-height: 100vh;
   height: 100%; }
-  @media only screen and (min-width: 1501px) {
+  @media only screen and (min-width: 2501px) {
     .hero {
       background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy.jpg") no-repeat center center scroll;
       background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 2500px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-2500.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-2500.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 2250px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-2250.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-2250.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 2000px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-2000.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-2000.jpg") no-repeat center center scroll;
       background-size: cover; } }
   @media only screen and (max-width: 1500px) {
     .hero {

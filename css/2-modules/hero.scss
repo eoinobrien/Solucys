@@ -8,12 +8,27 @@
   $hero-image-1000: '../img/laptop_whiteboard_copy-1000.jpg';
   $hero-image-1280: '../img/laptop_whiteboard_copy-1280.jpg';
   $hero-image-1500: '../img/laptop_whiteboard_copy-1500.jpg';
+  $hero-image-2000: '../img/laptop_whiteboard_copy-2000.jpg';
+  $hero-image-2250: '../img/laptop_whiteboard_copy-2250.jpg';
+  $hero-image-2500: '../img/laptop_whiteboard_copy-2500.jpg';
 
   @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-1500) no-repeat center center scroll);
   background-size: cover;
 
-  @media only screen and (min-width : 1501px) {
+  @media only screen and (min-width : 2501px) {
     @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 2500px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-2500) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 2250px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-2250) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 2000px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-2000) no-repeat center center scroll);
     background-size: cover;
   }
   @media only screen and (max-width : 1500px) {

@@ -841,6 +841,9 @@ html {
 .modal-open {
   overflow: hidden; }
 
+body {
+  background: #444444; }
+
 footer {
   margin-top: 2em; }
   footer a {

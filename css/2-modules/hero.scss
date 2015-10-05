@@ -4,21 +4,44 @@
   $hero-color: white;
   $gradient-angle: 10deg;
   $hero-image: '../img/laptop_whiteboard_copy.jpg';
+  $hero-image-960: '../img/laptop_whiteboard_copy-960.jpg';
+  $hero-image-1000: '../img/laptop_whiteboard_copy-1000.jpg';
+  $hero-image-1280: '../img/laptop_whiteboard_copy-1280.jpg';
+  $hero-image-1500: '../img/laptop_whiteboard_copy-1500.jpg';
 
-  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image) no-repeat center center fixed);
-
-  background-repeat: no-repeat;
-  background-position: center;
+  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-1500) no-repeat center center scroll);
   background-size: cover;
+
+  @media only screen and (min-width : 1501px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 1500px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-1500) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 1280px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-1280) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 1000px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-1000) no-repeat center center scroll);
+    background-size: cover;
+  }
+  @media only screen and (max-width : 960px) {
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image-960) no-repeat center center scroll);
+    background-size: cover;
+  }
+
   padding-bottom: 4em;
   min-height: 100vh;
   height: 100%;
 
   .hero-logo svg{
-      height: 10em;
-      margin-bottom: 2.5em;
-      background: #fff;
-      border-radius: 15px;
+    height: 10em;
+    margin-bottom: 2.5em;
+    background: #fff;
+    border-radius: 20px;
   }
 
   .hero-inner {

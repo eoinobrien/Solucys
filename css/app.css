@@ -598,19 +598,42 @@ html {
   box-sizing: inherit; }
 
 .hero {
-  background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy.jpg") no-repeat center center fixed;
-  background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy.jpg") no-repeat center center fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1500.jpg") no-repeat center center scroll;
+  background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1500.jpg") no-repeat center center scroll;
   background-size: cover;
   padding-bottom: 4em;
   min-height: 100vh;
   height: 100%; }
+  @media only screen and (min-width: 1501px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 1500px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1500.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1500.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 1280px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1280.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1280.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 1000px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1000.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-1000.jpg") no-repeat center center scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 960px) {
+    .hero {
+      background: -webkit-linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-960.jpg") no-repeat center center scroll;
+      background: linear-gradient(10deg, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url("../img/laptop_whiteboard_copy-960.jpg") no-repeat center center scroll;
+      background-size: cover; } }
   .hero .hero-logo svg {
     height: 10em;
     margin-bottom: 2.5em;
     background: #fff;
-    border-radius: 15px; }
+    border-radius: 20px; }
   .hero .hero-inner {
     max-width: 68em;
     margin-left: auto;

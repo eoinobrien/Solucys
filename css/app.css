@@ -736,128 +736,144 @@ html {
             font-size: 1.1em;
             max-width: 60%; } }
 
-.modal label {
-  cursor: pointer;
-  margin-bottom: 0; }
-.modal label img {
-  border-radius: 150px;
-  display: block;
-  max-width: 300px; }
-.modal .modal-state {
-  display: none; }
-.modal .modal-trigger {
-  padding: 0.8em 1em; }
-.modal .modal-fade-screen {
-  -webkit-transition: opacity 0.25s ease;
-  -moz-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  opacity: 0;
-  padding-top: 0.6em;
-  text-align: left;
-  visibility: hidden;
-  z-index: 99999999999; }
-  @media screen and (min-width: 53.75em) {
-    .modal .modal-fade-screen {
-      padding-top: 10em; } }
-  .modal .modal-fade-screen .modal-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    cursor: pointer; }
-.modal .modal-close {
-  position: absolute;
-  top: 1.5em;
-  right: 1.5em;
-  height: 1.5em;
-  width: 1.5em;
-  background: white;
-  cursor: pointer; }
-  .modal .modal-close:after, .modal .modal-close:before {
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    height: 1.5em;
-    width: 0.15em;
-    background: #DDD;
-    content: '';
-    display: block;
-    margin: -3px 0 0 -1px; }
-  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
-    background: #c4c4c4; }
-  .modal .modal-close:before {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-.modal .modal-inner {
-  -webkit-transition: opacity 0.25s ease;
-  -moz-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-  background: white;
-  border-radius: 3px;
-  margin-top: 0;
-  margin: auto;
-  max-height: 95%;
-  overflow: auto;
-  padding: 1.5em;
-  position: relative;
-  width: 95%;
-  color: #333; }
-  @media screen and (min-width: 40em) {
-    .modal .modal-inner {
-      max-height: 70%;
-      padding: 3em;
-      width: 60%; } }
-  @media screen and (min-width: 53.75em) {
-    .modal .modal-inner {
-      width: 50%; } }
-  .modal .modal-inner h1 {
-    color: #333;
-    margin-bottom: 0 0 0.6em 0;
-    text-align: left;
-    text-transform: capitalize; }
-  .modal .modal-inner p {
-    color: #333;
-    line-height: 1.5;
-    max-width: 100% !important; }
-  .modal .modal-inner .modal-intro {
-    margin-bottom: 1em; }
-  .modal .modal-inner .modal-content {
-    color: #333; }
-  .modal .modal-inner a.cta {
-    color: white;
-    display: inline-block;
-    margin-right: 0.5em;
-    margin-top: 1em; }
-    .modal .modal-inner a.cta:last-child {
-      padding: 0 2em; }
-.modal .modal-state:checked + .modal-fade-screen {
-  opacity: 1;
-  visibility: visible; }
-.modal .modal-state:checked + .modal-fade-screen .modal-inner {
-  top: 0.5em; }
+#book-now {
+  padding: 1em;
+  border: #888 solid 2px;
+  border-radius: 4px; }
 
-.modal-open {
-  overflow: hidden; }
+.form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .form:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .form > label {
+    display: block;
+    vertical-align: middle; }
+    .form > label:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .form > label .form-label {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      text-align: right; }
+      .form > label .form-label:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 700px) {
+        .form > label .form-label {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 100%;
+          text-align: left; }
+          .form > label .form-label:last-child {
+            margin-right: 0; } }
+    .form > label input[type="text"], .form > label input[type="email"], .form > label input[type="tel"] {
+      color: #222;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%;
+      margin-right: 0; }
+      .form > label input[type="text"]:last-child, .form > label input[type="email"]:last-child, .form > label input[type="tel"]:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 700px) {
+        .form > label input[type="text"], .form > label input[type="email"], .form > label input[type="tel"] {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 100%; }
+          .form > label input[type="text"]:last-child, .form > label input[type="email"]:last-child, .form > label input[type="tel"]:last-child {
+            margin-right: 0; } }
+  .form .button-full {
+    width: 100%;
+    max-width: 40em;
+    margin-top: 1em; }
+
+.button-group {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-right: 0; }
+  .button-group:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 700px) {
+    .button-group {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .button-group:last-child {
+        margin-right: 0; } }
+  .button-group input {
+    display: none; }
+  .button-group label {
+    margin-bottom: 0; }
+    @media screen and (min-width: 53.75em) {
+      .button-group label {
+        float: left; } }
+    .button-group label .button-group-item {
+      background: white;
+      border-left: 1px solid silver;
+      border-radius: 0;
+      border-right: 1px solid silver;
+      color: gray;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: normal;
+      line-height: 1;
+      padding: 0.75em 1em;
+      width: 100%; }
+      @media screen and (min-width: 53.75em) {
+        .button-group label .button-group-item {
+          border-bottom: 1px solid silver;
+          border-left: 0;
+          border-right: 1px solid #eeeeee;
+          border-top: 1px solid silver;
+          width: auto; } }
+      .button-group label .button-group-item:focus, .button-group label .button-group-item:hover {
+        background-color: #f7f7f7; }
+    .button-group label:first-child .button-group-item {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-top: 1px solid silver; }
+      @media screen and (min-width: 53.75em) {
+        .button-group label:first-child .button-group-item {
+          border-bottom-left-radius: 3px;
+          border-left: 1px solid silver;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 0; } }
+    .button-group label:last-child .button-group-item {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom: 1px solid silver; }
+      @media screen and (min-width: 53.75em) {
+        .button-group label:last-child .button-group-item {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 3px;
+          border-right: 1px solid silver;
+          border-top-right-radius: 3px; } }
+    .button-group label input:checked + .button-group-item {
+      background: #477DCA;
+      border: 1px solid #2c5999;
+      box-shadow: inset 0 1px 2px #3264ac;
+      color: white; }
 
 body {
   background: #444444; }
+
+hr {
+  width: 100%;
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto; }
 
 footer {
   margin-top: 2em; }

@@ -54,41 +54,67 @@
 
         <hr>
         <p>Companies in Ireland are required to prepare, implement and regurlarly update their Health and Safety Statement.</p>
-        <p>Our resident consultant Olivier, has over 10 years experience in the Health and Safety Management, and a B.Sc (Honours) Safety, Health and Welfare at Work. He has also worked at major manufacturing companies as the Health and Safety Manager, reducing the frequency and amount of incidents during his time there.</p>
-        <div class="modal">
-          <label for="consultation-modal">
-            Improve your Company's Health and Safety Today
-            <br>
-            <div class="modal-trigger button">Book a Free Consultation</div>
-          </label>
-          <input class="modal-state" id="consultation-modal" type="checkbox" />
-          <div class="modal-fade-screen">
-            <div class="modal-inner">
-              <div class="modal-close" for="consultation-modal"></div>
-              <h1>Book your Free First Consultation</h1>
-              <p class="modal-intro">Contact us today to find out ways to improve your company's Health and Safety.</p>
+        <p>At Solucys, we provide expert Risk Management Advisors, all of whom hold qualifications from Universities and Institutes all over the world.</p>
+        <p>With a unique Compliance and Problem Solving Processes, we improve the health and safety of every company we work with, helping them become compliant.</p>
 
-              <form action="//formspree.io/info@solucys.com" method="POST">
-                <label>Name: <input type="text" name="name" required></label>
-                <label>Company Name: <input type="text" name="company_name" required></label>
-                <label>Email: <input type="email" name="_replyto" required></label>
-                <label>Phone Number: <input type="tel" name="phone" required></label>
-                <label>Number of Employees:
-                  <br>
-                  <input type="radio" name="employees" value="<3">&lt; 3<br>
-                  <input type="radio" name="employees" value="3 - 10">3 - 10<br>
-                  <input type="radio" name="employees" value="11 - 100">11 - 100<br>
-                  <input type="radio" name="employees" value="101 - 1000">101 - 1000<br>
-                  <input type="radio" name="employees" value=">1000">&gt; 1000<br>
+
+        <div id="book-now">
+          <h1>Book your Free First Consultation</h1>
+          <p class="modal-intro">Contact us today to improve your company's Health and Safety.</p>
+
+          <form action="//formspree.io/info@solucys.com" method="POST" class="form">
+            <label>
+              <span class="form-label">Name:</span>
+              <input type="text" name="name" id="name" required>
+            </label>
+
+            <label>
+              <span class="form-label">Company Name:</span>
+              <input type="text" name="company_name" id="company"required>
+            </label>
+
+            <label>
+              <span class="form-label">Email:</span>
+              <input type="email" name="_replyto" id="email" required>
+            </label>
+
+            <label>
+              <span class="form-label">Phone Number:</span>
+              <input type="tel" name="phone" id="phone" required>
+            </label>
+
+            <label>
+              <span class="form-label">Number of Employees:</span>
+              <div class="button-group">
+                <label>
+                  <input type="radio" name="employees" id="num-employess" value="<3" checked>
+                  <span class="button-group-item">Less than 3</span>
                 </label>
-                <input type="hidden" name="_subject" value="Health and Safety Consultation" />
-                <input type="text" name="_gotcha" style="display:none" />
-                <input type="submit" value="Send">
-              </form>
-            </div>
-          </div>
-        </div>
+                <label>
+                  <input type="radio" name="employees" id="num-employess" value="3-10">
+                  <span class="button-group-item">3 - 10</span>
+                </label>
+                <label>
+                  <input type="radio" name="employees" id="num-employess" value="11-100">
+                  <span class="button-group-item">11 - 100</span>
+                </label>
+                <label>
+                  <input type="radio" name="employees" id="num-employess" value="101-1000">
+                  <span class="button-group-item">101 - 1000</span>
+                </label>
+                <label>
+                  <input type="radio" name="employees" id="num-employess" value=">1000">
+                  <span class="button-group-item">More than 1000</span>
+                </label>
+              </div>
+            </label>
+            <input type="hidden" name="_subject" id="num-employess" value="Health and Safety Consultation" />
 
+
+            <input type="text" name="_gotcha" style="display:none" />
+            <input class="button-full" type="submit" value="Send">
+          </form>
+        </div>
       </div>
       <footer>
         <a href="mailto:info@solucys.com" title="Email Solucys">
@@ -109,12 +135,6 @@
       </footer>
     </div>
   </div>
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/2-modules/modal.js"></script>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

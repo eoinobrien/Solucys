@@ -22,8 +22,8 @@ module.exports = function(env) {
     context: jsSrc,
     plugins: [],
     resolve: {
-      root: jsSrc,
-      extensions: [''].concat(extensions)
+      extensions: [].concat(extensions),
+      modules: [jsSrc, '/node_modules/', "node_loaders", "node_modules", path.resolve(__dirname, '../node_modules')]
     },
     module: {
       loaders: [
@@ -47,6 +47,7 @@ module.exports = function(env) {
     }
 
     webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin())
+    webpackConfig.plugins.push(new webpack.NoEmitOnErrorsPlugin())
   }
 
   if(env !== 'test') {
@@ -80,9 +81,8 @@ module.exports = function(env) {
           'NODE_ENV': JSON.stringify('production')
         }
       }),
-      new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin(),
-      new webpack.NoErrorsPlugin()
+      new webpack.NoEmitOnErrorsPlugin()
     )
   }
 

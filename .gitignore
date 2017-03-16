@@ -6,3 +6,7 @@ Desktop.ini
 node_modules
 **/generated/_icons.sass
 npm-debug.log
+.vscode/
+bower_components
+solucys.zip
+*.doc

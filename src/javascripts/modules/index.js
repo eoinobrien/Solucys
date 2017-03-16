@@ -1,8 +1,14 @@
+const main = () => {
+  require('../analytics/base.js').then((analytics) => analytics.init());
+};
+
+// Start the app through its main entry point.
+main();
+
 /*
   Automatically instantiates modules based on data-attrubiutes
   specifying module file-names.
 */
-
 const moduleElements = document.querySelectorAll('[data-module]')
 
 for (var i = 0; i < moduleElements.length; i++) {

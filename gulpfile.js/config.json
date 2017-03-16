@@ -20,12 +20,12 @@
       "src": "javascripts",
       "dest": "javascripts",
       "entries": {
-        "app": ["./app.js"]
+        "app": ["app.js"]
       },
       "extensions": ["js", "json"],
       "babel": {
         "presets": ["es2015", "stage-1"],
-        "plugins": []
+        "plugins": ["dynamic-import-system-import"]
       },
       "extractSharedJs": false
     },
@@ -38,7 +38,8 @@
       "sass": {
         "indentedSyntax": true,
         "includePaths": [
-          "./node_modules/normalize.css"
+          "./node_modules/normalize.css",
+          "./bower_components/bulma"
         ]
       },
       "extensions": ["sass", "scss", "css"]
@@ -47,12 +48,11 @@
     "html": {
       "src": "html",
       "dest": "./",
-      "dataFile": "data/global.json",
       "htmlmin": {
         "collapseWhitespace": true
       },
       "extensions": ["html", "json"],
-      "excludeFolders": ["layouts", "shared", "macros", "data"]
+      "excludeFolders": []
     },
 
     "images": {

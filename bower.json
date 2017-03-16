@@ -1,0 +1,21 @@
+{
+  "name": "solucys-marketing",
+  "description": "Marketing site for Solucys",
+  "main": "",
+  "authors": [
+    "Eoin O'Brien <eoin@eoinobrien.ie>"
+  ],
+  "license": "All Rights Reserved",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bulma": "^0.3.1"
+  }
+}

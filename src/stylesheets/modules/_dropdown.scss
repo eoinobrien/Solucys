@@ -1,0 +1,71 @@
+/* wrapper */
+.has-dropdown input[type="checkbox"] {
+	display: none;
+}
+
+.has-dropdown input[type="checkbox"]:checked ~ .dropdown {
+	display: block;
+}
+
+.has-dropdown input[type="checkbox"]:checked ~ a label span.caret {
+	display: inline-block;
+	transform: rotateX(180deg);
+}
+
+.has-dropdown {
+	padding: 0;
+
+	/* remove padding to avoid unhandled clicks on empty space of button */
+	button {
+		padding: 0;
+	}
+}
+
+/* expand label to handle click on any part of button. Set you own padding if .is-medium or .is-large */
+.has-dropdown a label {
+	padding: 7px 10px;
+}
+
+/* dropdown basic */
+.dropdown {
+	color: $text !important;
+	display: none;
+	position: absolute;
+	top: 49px;
+	z-index: 9999;
+}
+
+/* dropdown optional styling */
+.dropdown li:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.nav-item a,
+div.nav-item {
+  color: $text-light;
+  &:hover {
+    color: $link-hover;
+  }
+  // Modifiers
+  &.is-active {
+    color: $link-active;
+  }
+  &.is-tab {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    padding-bottom: calc(0.5rem - 1px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: calc(0.5rem - 1px);
+    &:hover {
+      border-bottom-color: $primary;
+      border-top-color: transparent;
+	}
+	&.is-active {
+      border-bottom: 3px solid $primary;
+      color: $primary;
+      padding-bottom: calc(0.5rem - 3px);
+	}
+  }
+}

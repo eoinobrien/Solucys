@@ -1,14 +1,18 @@
 {
   "images/checklist.png": "images/checklist-e02439eb5e.png",
   "images/checklist.svg": "images/checklist-cdee177732.svg",
+  "images/checklist_skewed.svg": "images/checklist_skewed-c5b050d28e.svg",
   "images/documents.png": "images/documents-725b507d94.png",
   "images/documents.svg": "images/documents-1a8e7c865d.svg",
+  "images/documents_skewed.svg": "images/documents_skewed-8f35414f60.svg",
   "images/loop.png": "images/loop-99773c2780.png",
   "images/loop.svg": "images/loop-099fd4e133.svg",
+  "images/loop_skewed.svg": "images/loop_skewed-889d29211a.svg",
   "images/riscall-logo.svg": "images/riscall-logo-e80f59231c.svg",
   "images/safety-icon.png": "images/safety-icon-df969dce0a.png",
   "images/safety-icon.svg": "images/safety-icon-b0a508635a.svg",
+  "images/safetyicon_skewed.svg": "images/safetyicon_skewed-37060c123e.svg",
   "images/solucys-logo.svg": "images/solucys-logo-86d6e0674e.svg",
-  "javascripts/app.js": "javascripts/app-486f5c65495b4879937a.js",
-  "stylesheets/app.css": "stylesheets/app-ae2d5c6e18.css"
+  "javascripts/app.js": "javascripts/app-e27d6c8e218dc65a7cec.js",
+  "stylesheets/app.css": "stylesheets/app-8e105d3e03.css"
 }

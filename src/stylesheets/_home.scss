@@ -8,42 +8,6 @@
 	max-height: 2.6rem;
 }
 
-.has-dark-text {
-	color: $text !important;
-}
-
-.button input[type="radio"]{
-	display: none;
-}
-
-label.button:has(> input[type="radio"]:checked) {
-	border-color: $button-active-border;
-	box-shadow: $button-shadow-inset;
-	color: $button-active;
-}
-
-// Nav Toggle
-#nav-toggle-state {
-  display: none;
-}
-
-#nav-toggle-state:checked ~ .nav-menu {
-  display: block;
-}
-
-// Modal Toggle
-#modal-toggle-state {
-  display: none;
-}
-
-#modal-toggle-state:checked ~ .modal {
-  display: block;
-}
-
-.is-list {
-	margin-left: 3rem;
-	list-style: circle;
-}
 
 a.simple{
 	color: $info !important;
@@ -52,4 +16,8 @@ a.simple{
 	&:hover{
 		color: darken($info, 20) !important;
 	}
+}
+
+a.button.is-text span i.fa {
+	text-decoration: none !important;
 }
